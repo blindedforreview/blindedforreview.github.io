@@ -1,74 +1,1098 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0067)file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#top -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Blindedforreview.github.io : fo realz" />
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
 
-    <title>Blindedforreview.github.io</title>
-  </head>
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
 
-  <body>
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/blindedforreview">View on GitHub</a>
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
 
-          <h1 id="project_title">Blindedforreview.github.io</h1>
-          <h2 id="project_tagline">fo realz</h2>
+p{
+margin:1em 0;
+}
 
-        </header>
-    </div>
+img{
+max-width:100%;
+}
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>markDownForAERJ</title></head><body><h1 id="analysis-notes-primary-and-secondary-effects-for-educational-expectations-an-international-perspective">ANALYSIS NOTES - Primary and Secondary Effects for Educational Expectations: An International Perspective</h1>
+<p><a name="top"></a></p><a name="top">
+</a><ol><a name="top">
+</a><li><a name="top"></a><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#prep">Data Preperation</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#princom">Principal Componenets Analysis</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#ICC">Intraclass Correlations</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#descrip">Country Level Descriptives</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#model">Mplus Model Generation</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#extraction">Country Level Results</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#correlation">Plots and Correlations</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#ESCS">Plot with ESCS</a></li>
+<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#outliers">Outliers</a></li>
+</ol>
+<p><a name="prep"></a></p><a name="prep">
+<h2 id="data-preperation">Data Preperation</h2>
+<p>Data is taken from the PISA 2003 database. The data is read into R from the developed SPSS datafile (studentData.sav). </p>
+<p>University expectations variable is also created from the <strong>SISCED</strong> variable in the PISA database.</p>
+<pre><code class="r"># read in spss data Export as RData
+library(foreign)
+setwd("/...")
+studentData &lt;- read.spss("./PISA2003/data/studentData.sav", to.data.frame = TRUE, 
+    use.value.labels = FALSE)
+reducedData &lt;- studentData[, c("CNT", "SCHOOLID", "AGE", "GRADE", "ST03Q01", 
+    "HISEI", "HISCED", "ESCS", "IMMIG", "OECD", "SISCED", "W_FSTUWT", grep("^PV.*(MATH|READ|SCIE)$", 
+        names(studentData), value = TRUE))]
+rm(studentData)
+# Remove non-OECD countries
+reducedData &lt;- reducedData[reducedData$OECD == 1, ]
+# Remove non-OECD from levels
+reducedData$CNT &lt;- factor(reducedData$CNT)
+# Add university expectation binary variable
+reducedData$UNI &lt;- ifelse(reducedData$SISCED == 5, 1, ifelse(reducedData$SISCED == 
+    9, NA, 0))
+# For pooled standadization z-score HISEI and HISCED
+reducedData[, 6:8] &lt;- scale(reducedData[, 6:8])
+names(reducedData)
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<pre><code>##  [1] "CNT"      "SCHOOLID" "AGE"      "GRADE"    "ST03Q01"  "HISEI"   
+##  [7] "HISCED"   "ESCS"     "IMMIG"    "OECD"     "SISCED"   "W_FSTUWT"
+## [13] "PV1MATH"  "PV2MATH"  "PV3MATH"  "PV4MATH"  "PV5MATH"  "PV1READ" 
+## [19] "PV2READ"  "PV3READ"  "PV4READ"  "PV5READ"  "PV1SCIE"  "PV2SCIE" 
+## [25] "PV3SCIE"  "PV4SCIE"  "PV5SCIE"  "UNI"
+</code></pre>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<pre><code class="r">save(reducedData, file = "./PISA2003/data/reducedData19013013.RData")
+rm(list = ls(all = TRUE))
+</code></pre>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>To manage memory the smaller analysis dataset is saved, the workplace is cleared, and then the workspace is cleared. The smaller data set is then sourced for the remaining analysis. </p>
+</a><p><a name="prep"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="princom"></a></p><a name="princom">
+<h2 id="creation-of-principal-components">Creation of Principal Components</h2>
+<p>Principals components of PISA math, verbal, and science tests was undertaken using the psych package. </p>
+<pre><code class="r"># Load RData
+load("/.../reducedData19013013.RData")
+# Z-score achievement
+reducedData[, grep("^PV[0-9]", names(reducedData))] &lt;- scale(reducedData[, grep("^PV[0-9]", 
+    names(reducedData))])
+# Principal Value analaysis
+library(psych)
+# Achievement scores
+Ach &lt;- list()
+for (i in 1:5) {
+    Ach[[i]] &lt;- principal(reducedData[, grep(paste0("^PV", i, ".*$"), names(reducedData))], 
+        1, score = TRUE)$scores
+}
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+Ach &lt;- data.frame(do.call(cbind, Ach))
+names(Ach) &lt;- paste0("Ach", 1:5)
+# add principal components to dataframe
+AchData &lt;- data.frame(reducedData, Ach)
+AchAgg &lt;- list()
+for (i in 1:5) {
+    AchAgg[[i]] &lt;- aggregate(AchData[, 28 + i] ~ SCHOOLID, FUN = mean, data = AchData)
+}
+AchAgg &lt;- data.frame(do.call(cbind, AchAgg))[, c(1, 2, 4, 6, 8, 10)]
+names(AchAgg) &lt;- c("SCHOOLID", paste0("AchAgg", 1:5))
+AchData &lt;- merge(AchData, AchAgg, by = "SCHOOLID")
+# Save the data with the ICCs and principal components
+save(AchData, file = "/.../AchData19013013.RData")
+rm(list = ls(all = TRUE))
+</code></pre>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+</a><p><a name="princom"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="ICC"></a></p><a name="ICC">
+<h2 id="construction-of-intraclass-correlations-icc">Construction of Intraclass correlations (ICC)</h2>
+<p>Country ICCs created using the psych package from a set of anova models. The data is split by country and the ICCs are created in a loop.</p>
+<pre><code class="r"># ICCs
+load("/.../AchData19013013.RData")
+library(multilevel)
+ICCdata &lt;- split(AchData, AchData$CNT)
+ICCs &lt;- lapply(ICCdata, function(x) ICC1(aov(Ach1 ~ as.factor(SCHOOLID), data = x, 
+    weights = W_FSTUWT)))
+ICCs &lt;- data.frame(do.call(rbind, ICCs))
+ICCs$Countries &lt;- row.names(ICCs)
+names(ICCs) &lt;- c("ICC", "CNT")
+row.names(ICCs) &lt;- NULL
+ICCs &lt;- data.frame(ICCs)
+ICCs2 &lt;- data.frame(ICCs[order(ICCs), ])
+ICCs2 &lt;- ICCs2[1:30, ]
+row.names(ICCs2) &lt;- ICCs2$CNT
+ICCplot &lt;- as.table(t(ICCs2[1:30, ]))
+barplot(ICCplot, horiz = TRUE, cex.names = 0.5, las = 1, main = "ICC by Country")
+abline(v = mean(ICCs$ICC, na.rm = TRUE))
+</code></pre>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<pre><code class="r"># Will need to report this in a table Aggregate the ICCs back into the data
+# set
+AchData &lt;- merge(AchData, ICCs, by = "CNT")
+</code></pre>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+</a><p><a name="ICC"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="descrip"></a></p><a name="descrip">
+<h2 id="descriptive-results">Descriptive Results</h2>
+<p>Descriptive results consist of:
+<em> n.obs = Number of observations
+</em> strat = Tracking index of Bol et al. (in press); Note that Mexico does not have a value.
+<em> ExpectTables = Proportion of students expecting a university level of education or greater
+</em> ICC = ICCs of countries
+* HDI = UN's Human Development Index.</p>
+<p>Plots ordered by ICC size.</p>
+<pre><code class="r"># Human development index
+HDI &lt;- read.csv("/.../Table_1__Human_Development_Index_and_its_components.csv", 
+    na.strings = "..")
+descriptives &lt;- data.frame(n.obs = tapply(AchData$CNT, AchData$CNT, length), 
+    ICC = round(tapply(AchData$ICC, AchData$CNT, mean), 3), ExpectTables = round(tapply(AchData$UNI, 
+        AchData$CNT, mean, na.rm = TRUE), 3))
+descriptives$CNT &lt;- row.names(descriptives)
+descriptives$strat &lt;- c(-1.043, 1.817, 1.018, -1.321, -0.138, 1.621, 1.862, 
+    -0.087, -1.02, -0.87, -0.474, -1.043, -0.474, 1.421, -0.302, -0.063, 0.166, 
+    -0.474, 0.072, 0.7, NA, 0.937, -1.043, -0.419, -0.083, -0.327, 1.621, -0.138, 
+    1.201, -1.321)
+descriptives$HDI &lt;- HDI[HDI$Abbreviation %in% descriptives$CNT, 5]
+# ifelse(descriptives$selection &lt;16,1,0)
+descriptives2 &lt;- data.frame(descriptives[order(descriptives$ExpectTables), ])
+DESplot &lt;- as.table(t(descriptives2[, c("ExpectTables", "CNT")]))
+barplot(DESplot, horiz = TRUE, cex.names = 0.5, las = 1, main = "University Expectations by Country")
+abline(v = mean(descriptives$ExpectTables, na.rm = TRUE))
+</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<pre><code class="r">cor(descriptives[, c(2:3, 5:6)], use = "complete.obs")
+</code></pre>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+<pre><code>##                   ICC ExpectTables   strat     HDI
+## ICC           1.00000      0.08432  0.6906 -0.3323
+## ExpectTables  0.08432      1.00000 -0.2138 -0.3142
+## strat         0.69055     -0.21378  1.0000 -0.3737
+## HDI          -0.33233     -0.31420 -0.3737  1.0000
+</code></pre>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+<pre><code class="r">pairs(descriptives[, c(2:3, 5:6)])
+</code></pre>
 
-    
+</a><p><a name="descrip"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="model"></a></p><a name="model">
+<h2 id="mplus-probit-logit-models">Mplus Probit &amp; Logit Models</h2>
+<p>First the R data file is saved for use in Mplus using the MplusAutomation package. Five data sets are created each with one plausable value for the Achievement principal component. Note that here we display the unscaled logistic regression coefficents. The scaled coefficents are avaliable from the author with results showing even more similarity with probit results. Scaled logit results were done in the Mediaton package by Imia and colleagues. Here we create a Mplus template file that is read in modified and run using a set of R functions. These functions are designed to loop through countries, SES measures, and logit or probit link functions. This means 30 by 3 by 2 Mplus models are created and run.</p>
+<pre><code>library(MplusAutomation)
+for (i in 1:5){
+  prepareMplusData(AchData[,c(1:28,39,28+i, 33+i)], 
+                   filename=paste0("/.../PISA2003_PV", i, ".dat")
+                 )
+}
+</code></pre>
 
-  </body>
-</html>
+<p>All models are run using a single Mplus template file. The template file is:</p>
+<pre><code>TITLE: Country XXX !Outcome = Expectation of university entry
+                    !Treatment mediator Interaction;
+DATA: FILE = "./PISA2003/data/PISA2003_PV1.dat";
+
+VARIABLE: NAMES = CNT SCHOOLID AGE GRADE ST03Q01 HISEI HISCED ESCS IMMIG OECD
+SISCED W_FSTUWT PV1MATH PV2MATH PV3MATH PV4MATH PV5MATH PV1READ PV2READ PV3READ
+     PV4READ PV5READ PV1SCIE PV2SCIE PV3SCIE PV4SCIE PV5SCIE UNI ICC PVAch;
+
+MISSING=.;
+
+USEVARIABLES UNI HISEI PVAch int;
+categorical = UNI;
+useobs CNT EQ 1;
+cluster=schoolid;
+weight=W_FSTUWT;
+
+ANALYSIS: type=complex; estimator = MLR; LINK = PROBIT;
+DEFINE: 
+int = HISEI*PVAch;
+STANDARDIZE HISEI PVAch int;
+
+MODEL:
+[UNI$1] (mbeta0);
+UNI on HISEI (beta2);
+UNI on PVAch (beta1);
+UNI on int (beta3);
+[PVAch](gamma0);
+PVAch on HISEI (gamma1);
+PVAch(sig2);
+
+MODEL CONSTRAINT:
+new(ind dir arg11 arg10 arg01 arg00 v1 v0 
+    probit11 probit10 probit01 probit00 
+    tie de pie ortie orde orpie Ctotal total prop);
+
+    dir=beta3*gamma0+beta2;
+    ind=beta1*gamma1+beta3*gamma1;
+    arg11=-mbeta0+beta2+(beta1+beta3)*(gamma0+gamma1);
+    arg10=-mbeta0+beta2+(beta1+beta3)*gamma0;
+    arg01=-mbeta0+beta1*(gamma0+gamma1);
+    arg00=-mbeta0+beta1*gamma0;
+    v1=(beta1+beta3)^2*sig2+1;
+    v0=beta1^2*sig2+1;
+    probit11=arg11/sqrt(v1);
+    probit10=arg10/sqrt(v1);
+    probit01=arg01/sqrt(v0);
+    probit00=arg00/sqrt(v0);
+    ! Phi function needed below:
+    tie=phi(probit11)-phi(probit10);
+    de=phi(probit10)-phi(probit00);
+    pie=phi(probit01)-phi(probit00);
+    ortie=(phi(probit11)/(1-phi(probit11)))/
+    (phi(probit10)/(1-phi(probit10)));
+    orde=(phi(probit10)/(1-phi(probit10)))/
+    (phi(probit00)/(1-phi(probit00)));
+    orpie=(phi(probit01)/(1-phi(probit01)))/
+    (phi(probit00)/(1-phi(probit00)));
+    Ctotal = de + tie;
+    total= ind + dir;
+    prop = (tie)/ (Ctotal+.00001);
+
+</code></pre>
+
+<p>The template file is iterative over in order to create country specific syntax files. The creation and running of files is done by:</p>
+</a><p><a name="model"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<pre><code class="r">fileCreation &lt;- function(ses.var = "HISEI", link = "PROBIT") {
+    temp &lt;- readLines("/.../MPLUS/TEMPLATEFILE19012013.inp")
+    temp[10:60] &lt;- unlist(sapply(temp[10:60], function(x) gsub("HISEI", ses.var, 
+        x)))
+    countries &lt;- levels(AchData$CNT)
+    if (link == "LOGIT") {
+        link = "LOGIT"
+        temp[17] &lt;- gsub("PROBIT", "LOGIT", temp[17])
+    } else {
+        link = "PROBIT"
+    }
+    print(link)
+    print(ses.var)
+    for (i in 1:30) {
+        x &lt;- temp
+        x[1] &lt;- gsub("XXX", countries[i], x[1])
+        x[13] &lt;- paste0("useobs CNT EQ ", i, ";")
+        cat(x, sep = "\n", file = paste0("/.../MPLUSforMARKDOWN/", 
+            ses.var, "/", link, "/", countries[i], ".inp"))
+    }
+}
+fileCreation(ses.var = "HISEI", link = "LOGIT")  # Highest occupation prestige of parents
+</code></pre>
+
+<pre><code>## [1] "LOGIT"
+## [1] "HISEI"
+</code></pre>
+
+<pre><code class="r">fileCreation(ses.var = "HISEI", link = "PROBIT")  # Highest occupation prestige of parents
+</code></pre>
+
+<pre><code>## [1] "PROBIT"
+## [1] "HISEI"
+</code></pre>
+
+<pre><code class="r">fileCreation(ses.var = "HISCED", link = "LOGIT")  # Highest education level of parents
+</code></pre>
+
+<pre><code>## [1] "LOGIT"
+## [1] "HISCED"
+</code></pre>
+
+<pre><code class="r">fileCreation(ses.var = "HISCED", link = "PROBIT")  # Highest education level of parents
+</code></pre>
+
+<pre><code>## [1] "PROBIT"
+## [1] "HISCED"
+</code></pre>
+
+<pre><code class="r">fileCreation(ses.var = "ESCS", link = "LOGIT")  # SES composite
+</code></pre>
+
+<pre><code>## [1] "LOGIT"
+## [1] "ESCS"
+</code></pre>
+
+<pre><code class="r">fileCreation(ses.var = "ESCS", link = "PROBIT")  # SES composite
+</code></pre>
+
+<pre><code>## [1] "PROBIT"
+## [1] "ESCS"
+</code></pre>
+
+<p>All the models in each of the folders using MplusAutomation package in R:</p>
+<pre><code>runModels("/.../HISEI", recursive=TRUE)
+runModels("/.../HISCED", recursive=TRUE)
+runModels("/.../ESCS", recursive=TRUE)
+</code></pre>
+
+<p><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="extraction"></a></p><a name="extraction">
+<h2 id="parameter-extraction-and-presentation">Parameter Extraction and Presentation</h2>
+<p>Extraction of Results was done using a series of R functions. The Mplus output files differed slightly from those from other countries and thus there entries were added manually.</p>
+<pre><code class="r"># Run on mplus files one at a time
+setwd("/...")
+paths &lt;- c("./PISA2003/MPLUSforMARKDOWN/HISEI/PROBIT", "./PISA2003/MPLUSforMARKDOWN/HISEI/LOGIT", 
+    "./PISA2003/MPLUSforMARKDOWN/HISCED/PROBIT", "./PISA2003/MPLUSforMARKDOWN/HISCED/LOGIT", 
+    "./PISA2003/MPLUSforMARKDOWN/ESCS/PROBIT", "./PISA2003/MPLUSforMARKDOWN/ESCS/LOGIT")
+
+parameterExtract &lt;- function(path) {
+    files &lt;- list.files(path, full.names = TRUE, pattern = ".out$")
+    # Extract relavent output
+    temp &lt;- grep("New/Additional Parameters", readLines(files[1]))
+    lines &lt;- c(temp + c(13, 14, 19, 21), temp - 20)
+    output &lt;- sapply(files, function(x) readLines(x)[lines])
+    # Function for extracting relavent parameters
+    f1 &lt;- function(x) unlist(strsplit(x, "[[:space:]]+"))[c(2:4)]
+    results &lt;- apply(output, c(1, 2), f1)
+    TIE &lt;- matrix(results[, 1, 1:30], 30, 3, byrow = TRUE)
+    DE &lt;- matrix(results[, 2, 1:30], 30, 3, byrow = TRUE)
+    total &lt;- matrix(results[, 3, 1:30], 30, 3, byrow = TRUE)
+    prop &lt;- matrix(results[, 4, 1:30], 30, 3, byrow = TRUE)
+    sch &lt;- matrix(results[, 5, 1:30], 30, 3, byrow = TRUE)
+    results &lt;- cbind(total, TIE, DE, prop, sch)
+    results &lt;- data.frame(results[, c(2:3, 5:6, 8:9, 11:12, 14:15)], descriptives$ICC, 
+        descriptives$HDI, descriptives$strat)
+    names(results) &lt;- c("total", "totalse", "ind", "indse", "dir", "dirse", 
+        "prop", "propse", "sch", "schse", "ICC", "HDI", "strat")
+    results &lt;- data.frame(apply(results, 2, as.numeric))
+    results$CNT &lt;- levels(AchData$CNT)
+    results
+}
+
+resultsList &lt;- lapply(paths, parameterExtract)
+names(resultsList) &lt;- c("HISEI_PROBIT", "HISEI_LOGIT", "HISCED_PROBIT", "HISCED_LOGIT", 
+    "ESCS_PROBIT", "ESCS_LOGIT")
+
+# Parsing was incomplete for poland so results added by hand. Better parsing
+# would solve this problem.
+resultsList[[3]][25, ] &lt;- c(0.18, 0.01, 0.072, 0.005, 0.108, 0.009, 0.402, 0.028, 
+    -0.01, 0.028, 0.163, 15, 1, "POL")
+resultsList[[3]][, 1:13] &lt;- lapply(resultsList[[3]][, 1:13], as.numeric)
+resultsList[[4]][25, ] &lt;- c(0.243, 0.014, 0.097, 0.007, 0.146, 0.012, 0.4, 0.026, 
+    -0.02, 0.048, 0.163, 15, 1, "POL")
+resultsList[[4]][, 1:13] &lt;- lapply(resultsList[[4]][, 1:13], as.numeric)
+resultsList
+</code></pre>
+
+<pre><code>## $HISEI_PROBIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.109   0.006 0.058 0.003 0.051 0.006 0.530  0.038  0.043 0.023 0.233
+## 2  0.151   0.013 0.082 0.007 0.069 0.009 0.542  0.032  0.084 0.041 0.589
+## 3  0.176   0.008 0.103 0.006 0.074 0.007 0.582  0.030  0.031 0.031 0.564
+## 4  0.105   0.006 0.040 0.003 0.065 0.006 0.381  0.032 -0.016 0.024 0.189
+## 5  0.119   0.015 0.065 0.008 0.054 0.010 0.544  0.044  0.025 0.050 0.381
+## 6  0.196   0.009 0.085 0.006 0.112 0.009 0.431  0.029  0.025 0.033 0.509
+## 7  0.148   0.010 0.087 0.006 0.061 0.008 0.590  0.038  0.074 0.036 0.633
+## 8  0.107   0.009 0.049 0.004 0.058 0.009 0.457  0.045 -0.053 0.028 0.156
+## 9  0.169   0.008 0.077 0.005 0.092 0.007 0.457  0.029 -0.027 0.029 0.245
+## 10 0.096   0.008 0.033 0.004 0.063 0.009 0.344  0.052  0.035 0.020 0.050
+## 11 0.139   0.011 0.091 0.007 0.048 0.010 0.654  0.051  0.030 0.035 0.535
+## 12 0.130   0.009 0.082 0.006 0.048 0.007 0.632  0.037 -0.001 0.043 0.265
+## 13 0.157   0.013 0.064 0.009 0.093 0.009 0.409  0.037  0.143 0.067 0.390
+## 14 0.211   0.011 0.094 0.008 0.116 0.010 0.447  0.032  0.037 0.050 0.570
+## 15 0.118   0.009 0.058 0.005 0.061 0.010 0.487  0.053 -0.016 0.026 0.191
+## 16 0.103   0.013 0.026 0.004 0.078 0.011 0.250  0.034  0.019 0.020 0.042
+## 17 0.172   0.008 0.044 0.007 0.127 0.008 0.258  0.038  0.021 0.046 0.574
+## 18 0.132   0.012 0.045 0.007 0.088 0.011 0.337  0.047  0.070 0.049 0.538
+## 19 0.070   0.007 0.028 0.005 0.041 0.007 0.407  0.064 -0.033 0.059 0.422
+## 20 0.171   0.013 0.084 0.007 0.087 0.013 0.490  0.048  0.194 0.083 0.325
+## 21 0.148   0.014 0.059 0.006 0.089 0.011 0.399  0.031  0.094 0.027 0.511
+## 22 0.142   0.012 0.097 0.008 0.044 0.012 0.688  0.062 -0.018 0.053 0.625
+## 23 0.132   0.010 0.043 0.004 0.088 0.010 0.329  0.033  0.002 0.031 0.082
+## 24 0.113   0.009 0.059 0.005 0.054 0.009 0.522  0.052 -0.023 0.031 0.189
+## 25 0.176   0.010 0.073 0.006 0.104 0.009 0.412  0.032 -0.004 0.027 0.163
+## 26 0.163   0.011 0.084 0.008 0.079 0.009 0.517  0.038  0.024 0.028 0.382
+## 27 0.190   0.010 0.098 0.007 0.092 0.008 0.517  0.031  0.123 0.039 0.466
+## 28 0.121   0.008 0.041 0.004 0.080 0.009 0.335  0.036  0.024 0.024 0.110
+## 29 0.085   0.011 0.050 0.008 0.035 0.009 0.587  0.073  0.046 0.054 0.624
+## 30 0.093   0.006 0.042 0.003 0.052 0.006 0.447  0.040  0.000 0.026 0.265
+##      HDI  strat CNT
+## 1  0.938 -1.043 AUS
+## 2  0.895  1.817 AUT
+## 3  0.897  1.018 BEL
+## 4  0.911 -1.321 CAN
+## 5  0.913 -0.138 CHE
+## 6  0.873  1.621 CZE
+## 7  0.920  1.862 DEU
+## 8  0.901 -0.087 DNK
+## 9  0.885 -1.020 ESP
+## 10 0.892 -0.870 FIN
+## 11 0.893 -0.474 FRA
+## 12 0.875 -1.043 GBR
+## 13 0.860 -0.474 GRC
+## 14 0.831  1.421 HUN
+## 15 0.916 -0.302 IRL
+## 16 0.906 -0.063 ISL
+## 17 0.881  0.166 ITA
+## 18 0.912 -0.474 JPN
+## 19 0.909  0.072 KOR
+## 20 0.875  0.700 LUX
+## 21 0.775     NA MEX
+## 22 0.921  0.937 NLD
+## 23 0.955 -1.043 NOR
+## 24 0.919 -0.419 NZL
+## 25 0.821 -0.083 POL
+## 26 0.816 -0.327 PRT
+## 27 0.840  1.621 SVK
+## 28 0.916 -0.138 SWE
+## 29 0.722  1.201 TUR
+## 30 0.937 -1.321 USA
+## 
+## $HISEI_LOGIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.128   0.008 0.069 0.004 0.059 0.009 0.537  0.046  0.070 0.039 0.233
+## 2  0.185   0.018 0.102 0.009 0.084 0.011 0.548  0.029  0.149 0.070 0.589
+## 3  0.236   0.011 0.136 0.007 0.101 0.009 0.575  0.028  0.053 0.052 0.564
+## 4  0.129   0.008 0.049 0.003 0.080 0.009 0.380  0.038 -0.026 0.039 0.189
+## 5  0.141   0.021 0.074 0.011 0.067 0.012 0.527  0.032  0.051 0.092 0.381
+## 6  0.258   0.013 0.113 0.008 0.145 0.012 0.438  0.029  0.044 0.057 0.509
+## 7  0.173   0.013 0.102 0.008 0.071 0.008 0.588  0.028  0.136 0.062 0.633
+## 8  0.135   0.013 0.064 0.006 0.071 0.011 0.472  0.042 -0.087 0.047 0.156
+## 9  0.213   0.009 0.096 0.006 0.117 0.009 0.451  0.029 -0.042 0.049 0.245
+## 10 0.142   0.012 0.048 0.005 0.094 0.015 0.340  0.055  0.056 0.033 0.050
+## 11 0.184   0.015 0.119 0.008 0.065 0.013 0.648  0.050  0.052 0.059 0.535
+## 12 0.171   0.013 0.107 0.008 0.064 0.009 0.628  0.033  0.003 0.073 0.265
+## 13 0.169   0.018 0.066 0.011 0.103 0.011 0.391  0.039  0.246 0.115 0.390
+## 14 0.256   0.015 0.111 0.010 0.146 0.013 0.432  0.034  0.069 0.086 0.570
+## 15 0.167   0.012 0.080 0.007 0.087 0.014 0.478  0.055 -0.027 0.044 0.191
+## 16 0.140   0.019 0.037 0.006 0.103 0.016 0.262  0.035  0.036 0.034 0.042
+## 17 0.241   0.012 0.058 0.010 0.183 0.013 0.241  0.039  0.033 0.077 0.574
+## 18 0.178   0.016 0.058 0.008 0.119 0.016 0.327  0.047  0.117 0.081 0.538
+## 19 0.062   0.009 0.026 0.006 0.036 0.008 0.423  0.083 -0.049 0.106 0.422
+## 20 0.239   0.019 0.115 0.009 0.124 0.019 0.481  0.047  0.330 0.142 0.325
+## 21 0.211   0.016 0.082 0.007 0.129 0.014 0.390  0.032  0.156 0.044 0.511
+## 22 0.184   0.016 0.124 0.009 0.059 0.015 0.678  0.061 -0.018 0.088 0.625
+## 23 0.170   0.015 0.061 0.006 0.109 0.014 0.357  0.034  0.003 0.054 0.082
+## 24 0.163   0.014 0.085 0.007 0.079 0.013 0.519  0.050 -0.039 0.052 0.189
+## 25 0.232   0.015 0.100 0.007 0.133 0.013 0.429  0.031 -0.006 0.047 0.163
+## 26 0.215   0.013 0.109 0.009 0.106 0.012 0.505  0.039  0.041 0.047 0.382
+## 27 0.244   0.013 0.126 0.008 0.119 0.012 0.515  0.031  0.208 0.067 0.466
+## 28 0.177   0.013 0.060 0.005 0.117 0.013 0.339  0.034  0.039 0.040 0.110
+## 29 0.084   0.012 0.047 0.008 0.037 0.009 0.559  0.079  0.071 0.094 0.624
+## 30 0.114   0.008 0.050 0.004 0.064 0.008 0.436  0.045 -0.001 0.044 0.265
+##      HDI  strat CNT
+## 1  0.938 -1.043 AUS
+## 2  0.895  1.817 AUT
+## 3  0.897  1.018 BEL
+## 4  0.911 -1.321 CAN
+## 5  0.913 -0.138 CHE
+## 6  0.873  1.621 CZE
+## 7  0.920  1.862 DEU
+## 8  0.901 -0.087 DNK
+## 9  0.885 -1.020 ESP
+## 10 0.892 -0.870 FIN
+## 11 0.893 -0.474 FRA
+## 12 0.875 -1.043 GBR
+## 13 0.860 -0.474 GRC
+## 14 0.831  1.421 HUN
+## 15 0.916 -0.302 IRL
+## 16 0.906 -0.063 ISL
+## 17 0.881  0.166 ITA
+## 18 0.912 -0.474 JPN
+## 19 0.909  0.072 KOR
+## 20 0.875  0.700 LUX
+## 21 0.775     NA MEX
+## 22 0.921  0.937 NLD
+## 23 0.955 -1.043 NOR
+## 24 0.919 -0.419 NZL
+## 25 0.821 -0.083 POL
+## 26 0.816 -0.327 PRT
+## 27 0.840  1.621 SVK
+## 28 0.916 -0.138 SWE
+## 29 0.722  1.201 TUR
+## 30 0.937 -1.321 USA
+## 
+## $HISCED_PROBIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.122   0.007 0.040 0.003 0.082 0.006 0.330  0.025  0.023 0.028 0.233
+## 2  0.153   0.012 0.053 0.007 0.100 0.009 0.346  0.032  0.080 0.038 0.589
+## 3  0.176   0.010 0.080 0.006 0.096 0.009 0.454  0.032  0.041 0.031 0.564
+## 4  0.117   0.006 0.028 0.002 0.089 0.007 0.240  0.021 -0.021 0.022 0.189
+## 5  0.156   0.016 0.052 0.008 0.105 0.012 0.331  0.035  0.023 0.050 0.381
+## 6  0.202   0.010 0.089 0.007 0.113 0.009 0.440  0.032  0.017 0.033 0.509
+## 7  0.155   0.012 0.085 0.007 0.071 0.010 0.544  0.041  0.086 0.036 0.633
+## 8  0.131   0.015 0.051 0.004 0.080 0.013 0.387  0.037 -0.052 0.029 0.156
+## 9  0.159   0.009 0.065 0.006 0.094 0.007 0.411  0.027 -0.031 0.032 0.245
+## 10 0.097   0.007 0.027 0.003 0.070 0.008 0.280  0.038  0.042 0.020 0.050
+## 11 0.138   0.011 0.077 0.007 0.061 0.009 0.560  0.046  0.023 0.036 0.535
+## 12 0.151   0.011 0.065 0.005 0.086 0.009 0.433  0.034  0.008 0.039 0.265
+## 13 0.139   0.012 0.055 0.006 0.084 0.008 0.393  0.030  0.154 0.066 0.390
+## 14 0.223   0.011 0.097 0.008 0.126 0.010 0.434  0.030  0.030 0.047 0.570
+## 15 0.119   0.009 0.047 0.004 0.073 0.009 0.392  0.043 -0.015 0.025 0.191
+## 16 0.172   0.013 0.033 0.004 0.139 0.012 0.193  0.023  0.015 0.021 0.042
+## 17 0.154   0.009 0.046 0.007 0.107 0.008 0.302  0.039  0.021 0.047 0.574
+## 18 0.152   0.014 0.053 0.009 0.099 0.011 0.347  0.051  0.073 0.047 0.538
+## 19 0.092   0.007 0.031 0.005 0.061 0.006 0.336  0.045 -0.029 0.058 0.422
+## 20 0.155   0.017 0.067 0.008 0.088 0.013 0.431  0.042  0.201 0.089 0.325
+## 21 0.155   0.014 0.053 0.006 0.102 0.010 0.343  0.025  0.090 0.026 0.511
+## 22 0.105   0.012 0.066 0.007 0.039 0.010 0.632  0.069 -0.003 0.054 0.625
+## 23 0.136   0.013 0.028 0.003 0.107 0.012 0.209  0.024 -0.003 0.030 0.082
+## 24 0.143   0.011 0.053 0.005 0.090 0.010 0.368  0.035 -0.028 0.032 0.189
+## 25 0.180   0.010 0.072 0.005 0.108 0.009 0.402  0.028 -0.010 0.028 0.163
+## 26 0.134   0.010 0.064 0.007 0.070 0.007 0.478  0.039  0.031 0.029 0.382
+## 27 0.195   0.010 0.099 0.008 0.096 0.009 0.507  0.034  0.118 0.039 0.466
+## 28 0.131   0.011 0.032 0.004 0.099 0.010 0.243  0.025  0.032 0.025 0.110
+## 29 0.105   0.011 0.061 0.008 0.044 0.007 0.580  0.051  0.033 0.054 0.624
+## 30 0.131   0.007 0.033 0.003 0.098 0.007 0.253  0.025  0.003 0.026 0.265
+##       HDI  strat CNT
+## 1   0.938 -1.043 AUS
+## 2   0.895  1.817 AUT
+## 3   0.897  1.018 BEL
+## 4   0.911 -1.321 CAN
+## 5   0.913 -0.138 CHE
+## 6   0.873  1.621 CZE
+## 7   0.920  1.862 DEU
+## 8   0.901 -0.087 DNK
+## 9   0.885 -1.020 ESP
+## 10  0.892 -0.870 FIN
+## 11  0.893 -0.474 FRA
+## 12  0.875 -1.043 GBR
+## 13  0.860 -0.474 GRC
+## 14  0.831  1.421 HUN
+## 15  0.916 -0.302 IRL
+## 16  0.906 -0.063 ISL
+## 17  0.881  0.166 ITA
+## 18  0.912 -0.474 JPN
+## 19  0.909  0.072 KOR
+## 20  0.875  0.700 LUX
+## 21  0.775     NA MEX
+## 22  0.921  0.937 NLD
+## 23  0.955 -1.043 NOR
+## 24  0.919 -0.419 NZL
+## 25 15.000  1.000 POL
+## 26  0.816 -0.327 PRT
+## 27  0.840  1.621 SVK
+## 28  0.916 -0.138 SWE
+## 29  0.722  1.201 TUR
+## 30  0.937 -1.321 USA
+## 
+## $HISCED_LOGIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.148   0.009 0.046 0.004 0.101 0.009 0.314  0.028  0.037 0.047 0.233
+## 2  0.183   0.017 0.067 0.009 0.117 0.012 0.364  0.031  0.143 0.066 0.589
+## 3  0.240   0.014 0.105 0.007 0.135 0.013 0.436  0.030  0.065 0.053 0.564
+## 4  0.145   0.009 0.033 0.002 0.112 0.010 0.225  0.025 -0.036 0.037 0.189
+## 5  0.169   0.025 0.061 0.010 0.107 0.017 0.364  0.028  0.053 0.091 0.381
+## 6  0.267   0.013 0.118 0.009 0.150 0.012 0.440  0.030  0.026 0.057 0.509
+## 7  0.184   0.016 0.099 0.009 0.085 0.011 0.538  0.034  0.156 0.062 0.633
+## 8  0.182   0.023 0.068 0.006 0.115 0.019 0.371  0.035 -0.085 0.048 0.156
+## 9  0.203   0.011 0.082 0.006 0.120 0.009 0.406  0.028 -0.046 0.053 0.245
+## 10 0.140   0.011 0.039 0.004 0.101 0.013 0.277  0.040  0.067 0.033 0.050
+## 11 0.183   0.015 0.099 0.009 0.084 0.013 0.541  0.044  0.040 0.060 0.535
+## 12 0.205   0.015 0.087 0.007 0.118 0.014 0.423  0.033  0.013 0.067 0.265
+## 13 0.155   0.016 0.060 0.008 0.095 0.010 0.386  0.032  0.265 0.115 0.390
+## 14 0.271   0.016 0.111 0.010 0.160 0.013 0.411  0.031  0.056 0.082 0.570
+## 15 0.165   0.012 0.063 0.006 0.102 0.014 0.382  0.046 -0.025 0.042 0.191
+## 16 0.248   0.020 0.047 0.006 0.200 0.018 0.191  0.021  0.030 0.035 0.042
+## 17 0.212   0.012 0.062 0.009 0.150 0.012 0.292  0.040  0.035 0.079 0.574
+## 18 0.213   0.018 0.067 0.011 0.147 0.017 0.313  0.050  0.123 0.078 0.538
+## 19 0.075   0.010 0.025 0.006 0.050 0.007 0.338  0.058 -0.042 0.104 0.422
+## 20 0.217   0.023 0.092 0.010 0.126 0.020 0.421  0.044  0.343 0.150 0.325
+## 21 0.220   0.016 0.074 0.007 0.146 0.013 0.337  0.025  0.149 0.043 0.511
+## 22 0.134   0.016 0.083 0.009 0.051 0.014 0.621  0.072  0.002 0.090 0.625
+## 23 0.187   0.020 0.040 0.005 0.147 0.019 0.213  0.024 -0.004 0.052 0.082
+## 24 0.210   0.017 0.073 0.006 0.136 0.016 0.350  0.035 -0.047 0.054 0.189
+## 25 0.243   0.014 0.097 0.007 0.146 0.012 0.400  0.026 -0.020 0.048 0.163
+## 26 0.171   0.011 0.081 0.008 0.091 0.009 0.472  0.039  0.053 0.049 0.382
+## 27 0.252   0.013 0.126 0.009 0.126 0.012 0.500  0.034  0.200 0.066 0.466
+## 28 0.204   0.017 0.046 0.005 0.158 0.016 0.226  0.023  0.050 0.041 0.110
+## 29 0.095   0.012 0.058 0.008 0.037 0.008 0.607  0.059  0.050 0.093 0.624
+## 30 0.149   0.009 0.036 0.004 0.114 0.009 0.238  0.028  0.000 0.043 0.265
+##       HDI  strat CNT
+## 1   0.938 -1.043 AUS
+## 2   0.895  1.817 AUT
+## 3   0.897  1.018 BEL
+## 4   0.911 -1.321 CAN
+## 5   0.913 -0.138 CHE
+## 6   0.873  1.621 CZE
+## 7   0.920  1.862 DEU
+## 8   0.901 -0.087 DNK
+## 9   0.885 -1.020 ESP
+## 10  0.892 -0.870 FIN
+## 11  0.893 -0.474 FRA
+## 12  0.875 -1.043 GBR
+## 13  0.860 -0.474 GRC
+## 14  0.831  1.421 HUN
+## 15  0.916 -0.302 IRL
+## 16  0.906 -0.063 ISL
+## 17  0.881  0.166 ITA
+## 18  0.912 -0.474 JPN
+## 19  0.909  0.072 KOR
+## 20  0.875  0.700 LUX
+## 21  0.775     NA MEX
+## 22  0.921  0.937 NLD
+## 23  0.955 -1.043 NOR
+## 24  0.919 -0.419 NZL
+## 25 15.000  1.000 POL
+## 26  0.816 -0.327 PRT
+## 27  0.840  1.621 SVK
+## 28  0.916 -0.138 SWE
+## 29  0.722  1.201 TUR
+## 30  0.937 -1.321 USA
+## 
+## $ESCS_PROBIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.154   0.008 0.061 0.004 0.093 0.008 0.394  0.027  0.012 0.028 0.233
+## 2  0.221   0.014 0.097 0.007 0.124 0.011 0.438  0.027  0.073 0.038 0.589
+## 3  0.250   0.009 0.129 0.007 0.122 0.009 0.514  0.027  0.031 0.030 0.564
+## 4  0.158   0.005 0.040 0.002 0.118 0.006 0.254  0.019 -0.030 0.022 0.189
+## 5  0.192   0.019 0.092 0.010 0.100 0.013 0.479  0.033  0.013 0.046 0.381
+## 6  0.252   0.010 0.101 0.007 0.151 0.009 0.401  0.026  0.021 0.033 0.509
+## 7  0.195   0.012 0.109 0.007 0.086 0.010 0.560  0.036  0.067 0.035 0.633
+## 8  0.159   0.013 0.068 0.005 0.092 0.013 0.424  0.040 -0.055 0.029 0.156
+## 9  0.222   0.008 0.096 0.006 0.126 0.008 0.433  0.023 -0.036 0.031 0.245
+## 10 0.134   0.007 0.042 0.004 0.093 0.009 0.310  0.039  0.033 0.020 0.050
+## 11 0.196   0.012 0.116 0.008 0.080 0.011 0.593  0.042  0.024 0.035 0.535
+## 12 0.193   0.009 0.100 0.006 0.093 0.008 0.519  0.030  0.002 0.042 0.265
+## 13 0.190   0.015 0.065 0.008 0.125 0.010 0.342  0.029  0.143 0.065 0.390
+## 14 0.274   0.012 0.102 0.009 0.172 0.012 0.373  0.031  0.024 0.046 0.570
+## 15 0.178   0.009 0.061 0.007 0.117 0.011 0.342  0.040 -0.024 0.025 0.191
+## 16 0.170   0.013 0.042 0.004 0.128 0.012 0.249  0.025  0.018 0.020 0.042
+## 17 0.213   0.010 0.053 0.008 0.160 0.009 0.250  0.033  0.016 0.046 0.574
+## 18 0.215   0.012 0.070 0.008 0.144 0.012 0.326  0.038  0.053 0.045 0.538
+## 19 0.107   0.008 0.036 0.006 0.071 0.006 0.334  0.045 -0.035 0.058 0.422
+## 20 0.204   0.015 0.092 0.007 0.112 0.014 0.453  0.040  0.190 0.078 0.325
+## 21 0.198   0.017 0.068 0.009 0.130 0.011 0.344  0.026  0.080 0.025 0.511
+## 22 0.177   0.013 0.121 0.008 0.056 0.012 0.685  0.052 -0.014 0.052 0.625
+## 23 0.178   0.011 0.050 0.005 0.128 0.010 0.279  0.026  0.000 0.029 0.082
+## 24 0.165   0.010 0.077 0.005 0.087 0.010 0.471  0.036 -0.028 0.029 0.189
+## 25 0.228   0.010 0.076 0.006 0.152 0.010 0.332  0.027 -0.008 0.029 0.163
+## 26 0.196   0.011 0.089 0.009 0.107 0.008 0.453  0.034  0.025 0.028 0.382
+## 27 0.268   0.010 0.122 0.008 0.146 0.010 0.456  0.028  0.118 0.038 0.466
+## 28 0.172   0.010 0.054 0.005 0.118 0.010 0.315  0.030  0.023 0.023 0.110
+## 29 0.119   0.012 0.061 0.009 0.058 0.008 0.514  0.048  0.035 0.054 0.624
+## 30 0.159   0.006 0.042 0.004 0.118 0.007 0.262  0.024 -0.004 0.025 0.265
+##      HDI  strat CNT
+## 1  0.938 -1.043 AUS
+## 2  0.895  1.817 AUT
+## 3  0.897  1.018 BEL
+## 4  0.911 -1.321 CAN
+## 5  0.913 -0.138 CHE
+## 6  0.873  1.621 CZE
+## 7  0.920  1.862 DEU
+## 8  0.901 -0.087 DNK
+## 9  0.885 -1.020 ESP
+## 10 0.892 -0.870 FIN
+## 11 0.893 -0.474 FRA
+## 12 0.875 -1.043 GBR
+## 13 0.860 -0.474 GRC
+## 14 0.831  1.421 HUN
+## 15 0.916 -0.302 IRL
+## 16 0.906 -0.063 ISL
+## 17 0.881  0.166 ITA
+## 18 0.912 -0.474 JPN
+## 19 0.909  0.072 KOR
+## 20 0.875  0.700 LUX
+## 21 0.775     NA MEX
+## 22 0.921  0.937 NLD
+## 23 0.955 -1.043 NOR
+## 24 0.919 -0.419 NZL
+## 25 0.821 -0.083 POL
+## 26 0.816 -0.327 PRT
+## 27 0.840  1.621 SVK
+## 28 0.916 -0.138 SWE
+## 29 0.722  1.201 TUR
+## 30 0.937 -1.321 USA
+## 
+## $ESCS_LOGIT
+##    total totalse   ind indse   dir dirse  prop propse    sch schse   ICC
+## 1  0.179   0.010 0.067 0.004 0.112 0.011 0.373  0.031  0.018 0.048 0.233
+## 2  0.281   0.021 0.128 0.009 0.153 0.016 0.457  0.025  0.133 0.066 0.589
+## 3  0.349   0.013 0.174 0.008 0.174 0.014 0.500  0.026  0.050 0.051 0.564
+## 4  0.184   0.008 0.043 0.003 0.141 0.009 0.233  0.022 -0.052 0.036 0.189
+## 5  0.228   0.030 0.112 0.014 0.116 0.018 0.490  0.026  0.028 0.085 0.381
+## 6  0.340   0.013 0.138 0.008 0.202 0.014 0.405  0.025  0.035 0.058 0.509
+## 7  0.234   0.017 0.132 0.009 0.103 0.011 0.561  0.027  0.122 0.062 0.633
+## 8  0.214   0.020 0.092 0.007 0.122 0.017 0.430  0.036 -0.089 0.047 0.156
+## 9  0.282   0.010 0.118 0.006 0.163 0.011 0.420  0.024 -0.055 0.052 0.245
+## 10 0.196   0.011 0.059 0.006 0.136 0.015 0.303  0.041  0.054 0.033 0.050
+## 11 0.266   0.017 0.154 0.010 0.112 0.016 0.578  0.041  0.041 0.059 0.535
+## 12 0.267   0.014 0.138 0.008 0.129 0.012 0.518  0.028  0.005 0.073 0.265
+## 13 0.195   0.022 0.061 0.011 0.134 0.014 0.313  0.032  0.244 0.113 0.390
+## 14 0.332   0.019 0.109 0.012 0.223 0.018 0.327  0.033  0.045 0.080 0.570
+## 15 0.251   0.012 0.080 0.009 0.171 0.017 0.318  0.042 -0.038 0.042 0.191
+## 16 0.239   0.019 0.062 0.005 0.177 0.018 0.260  0.025  0.034 0.034 0.042
+## 17 0.294   0.015 0.067 0.011 0.227 0.014 0.226  0.034  0.025 0.077 0.574
+## 18 0.292   0.016 0.087 0.010 0.205 0.019 0.297  0.039  0.091 0.076 0.538
+## 19 0.078   0.010 0.026 0.006 0.052 0.007 0.335  0.062 -0.049 0.103 0.422
+## 20 0.292   0.022 0.128 0.009 0.163 0.022 0.440  0.042  0.325 0.135 0.325
+## 21 0.285   0.017 0.094 0.009 0.191 0.013 0.330  0.026  0.133 0.041 0.511
+## 22 0.231   0.018 0.154 0.009 0.077 0.018 0.667  0.055 -0.012 0.088 0.625
+## 23 0.238   0.017 0.074 0.006 0.164 0.016 0.310  0.028  0.000 0.051 0.082
+## 24 0.247   0.015 0.112 0.007 0.135 0.015 0.453  0.035 -0.047 0.048 0.189
+## 25 0.304   0.015 0.109 0.008 0.196 0.015 0.357  0.027 -0.015 0.050 0.163
+## 26 0.260   0.012 0.112 0.010 0.148 0.012 0.430  0.035  0.042 0.047 0.382
+## 27 0.355   0.013 0.158 0.009 0.198 0.015 0.443  0.028  0.203 0.067 0.466
+## 28 0.265   0.015 0.081 0.007 0.184 0.016 0.307  0.029  0.037 0.038 0.110
+## 29 0.101   0.013 0.053 0.009 0.049 0.008 0.521  0.061  0.052 0.093 0.624
+## 30 0.181   0.008 0.040 0.004 0.140 0.009 0.223  0.025 -0.011 0.042 0.265
+##      HDI  strat CNT
+## 1  0.938 -1.043 AUS
+## 2  0.895  1.817 AUT
+## 3  0.897  1.018 BEL
+## 4  0.911 -1.321 CAN
+## 5  0.913 -0.138 CHE
+## 6  0.873  1.621 CZE
+## 7  0.920  1.862 DEU
+## 8  0.901 -0.087 DNK
+## 9  0.885 -1.020 ESP
+## 10 0.892 -0.870 FIN
+## 11 0.893 -0.474 FRA
+## 12 0.875 -1.043 GBR
+## 13 0.860 -0.474 GRC
+## 14 0.831  1.421 HUN
+## 15 0.916 -0.302 IRL
+## 16 0.906 -0.063 ISL
+## 17 0.881  0.166 ITA
+## 18 0.912 -0.474 JPN
+## 19 0.909  0.072 KOR
+## 20 0.875  0.700 LUX
+## 21 0.775     NA MEX
+## 22 0.921  0.937 NLD
+## 23 0.955 -1.043 NOR
+## 24 0.919 -0.419 NZL
+## 25 0.821 -0.083 POL
+## 26 0.816 -0.327 PRT
+## 27 0.840  1.621 SVK
+## 28 0.916 -0.138 SWE
+## 29 0.722  1.201 TUR
+## 30 0.937 -1.321 USA
+</code></pre>
+
+</a><p><a name="extraction"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="correlation"></a></p><a name="correlation">
+<h2 id="plots-and-correlations-between-model-results-and-country-iccs">Plots and Correlations between Model Results and Country ICCs</h2>
+<p>Here was conduct country level analysis using correations and partial correlations. Partial correlations where done using the ppcor package. Scatter plots of results and barplots or results orded by size are created using the probit models for occupational prestige.</p>
+<pre><code class="r">library(ppcor)
+# Preperation of Results Corr between total effect and ICC by country
+# Correlation
+sapply(resultsList, function(x) cor(x[, "total"], x[, "ICC"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##       0.40956       0.28596       0.23206       0.01751       0.38198 
+##    ESCS_LOGIT 
+##       0.19200
+</code></pre>
+
+<pre><code class="r">sapply(resultsList, function(x) cor(x[!c(x$CNT == "MEX"), "total"], x[!c(x$CNT == 
+    "MEX"), "strat"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.4920        0.4059        0.4911        0.3436        0.4670 
+##    ESCS_LOGIT 
+##        0.3563
+</code></pre>
+
+<pre><code class="r"># Partial correlation controlling for age of selection
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "total"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[2, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##       0.09403      -0.01700      -0.07966      -0.26190       0.09346 
+##    ESCS_LOGIT 
+##      -0.08752
+</code></pre>
+
+<pre><code class="r"># Partial correlation controlling for ICC
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "total"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[3, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.2942        0.2974        0.4039        0.4021        0.3007 
+##    ESCS_LOGIT 
+##        0.3394
+</code></pre>
+
+<pre><code class="r"># Corr between proportion indirect and CNT Correlation Probit
+sapply(resultsList, function(x) cor(x[, "prop"], x[, "ICC"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.4551        0.4101        0.6598        0.6634        0.5191 
+##    ESCS_LOGIT 
+##        0.4718
+</code></pre>
+
+<pre><code class="r">sapply(resultsList, function(x) cor(x[!c(x$CNT == "MEX"), "prop"], x[!c(x$CNT == 
+    "MEX"), "strat"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.3025        0.2970        0.5426        0.5684        0.4301 
+##    ESCS_LOGIT 
+##        0.4462
+</code></pre>
+
+<pre><code class="r"># Logit log-odds
+sapply(resultsList, function(x) cor(x[, "ind"], x[, "ICC"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.5531        0.4368        0.6063        0.4891        0.5756 
+##    ESCS_LOGIT 
+##        0.4166
+</code></pre>
+
+<pre><code class="r">sapply(resultsList, function(x) cor(x[!c(x$CNT == "MEX"), "ind"], x[!c(x$CNT == 
+    "MEX"), "strat"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.5460        0.4871        0.6876        0.6381        0.5711 
+##    ESCS_LOGIT 
+##        0.5021
+</code></pre>
+
+<pre><code class="r"># Probit Partial correlation controlling for age of selection
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "prop"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[2, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.3905        0.3375        0.5252        0.5146        0.3762 
+##    ESCS_LOGIT 
+##        0.2901
+</code></pre>
+
+<pre><code class="r"># Partial correlation controlling for ICC
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "prop"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[3, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##    -4.688e-02    -7.922e-05     1.189e-01     1.620e-01     9.254e-02 
+##    ESCS_LOGIT 
+##     1.644e-01
+</code></pre>
+
+<pre><code class="r"># Log-odds Partial correlation controlling for age of selection
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "ind"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[2, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.3083        0.1693        0.3576        0.1935        0.3419 
+##    ESCS_LOGIT 
+##        0.1420
+</code></pre>
+
+<pre><code class="r"># Partial correlation controlling for ICC
+sapply(resultsList, function(x) pcor(data.frame(x[!c(x$CNT == "MEX"), "ind"], 
+    x[!c(x$CNT == "MEX"), "ICC"], x[!c(x$CNT == "MEX"), c("strat", "HDI")]))$estimate[3, 
+    1])
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.2470        0.2796        0.4071        0.4103        0.2881 
+##    ESCS_LOGIT 
+##        0.3429
+</code></pre>
+
+<pre><code class="r"># Plots for weights with country specific standadization
+par(mfrow = c(2, 2))
+results &lt;- resultsList[[1]]
+plot(results[, "ICC"], results[, "total"], ylab = "Total Effect", xlab = "ICC", 
+    ylim = c(0, 0.3), pch = "", main = "Total Effect by ICCs")
+text(results[, "ICC"], results[, "total"], results[, "CNT"], cex = 0.6)
+abline(lm(results[, "total"] ~ results[, "ICC"]), col = "grey")
+arrows(x0 = results[, "ICC"], y0 = results[, "total"] - results[, "totalse"], 
+    x1 = results[, "ICC"], y1 = results[, "total"] + results[, "totalse"], length = 0, 
+    col = "grey")
+
+# Indirect Effect
+plot(results[, "ICC"], results[, "prop"], ylab = "Proportion of Total Effect ", 
+    xlab = "ICC", ylim = c(0, 0.8), pch = "", main = "Primary Effect by ICCs")
+text(results[, "ICC"], results[, "prop"], results[, "CNT"], cex = 0.6)
+abline(lm(results[, "prop"] ~ results[, "ICC"]), col = "grey")
+arrows(x0 = results[, "ICC"], y0 = results[, "prop"] - results[, "propse"], 
+    x1 = results[, "ICC"], y1 = results[, "prop"] + results[, "propse"], length = 0, 
+    col = "grey")
+
+ReTotal &lt;- data.frame(results[order(results$total), ])
+ResPlot &lt;- as.table(t(ReTotal[, c("total", "CNT")]))
+colnames(ResPlot) &lt;- ResPlot[2, ]
+barplot(ResPlot, horiz = TRUE, cex.names = 0.8, las = 1, main = "Total Effects by Country")
+abline(v = mean(results$total, na.rm = TRUE))
+
+ReTotal &lt;- data.frame(results[order(results$prop), ])
+ResPlot &lt;- as.table(t(ReTotal[, c("prop", "CNT")]))
+colnames(ResPlot) &lt;- ResPlot[2, ]
+barplot(ResPlot, horiz = TRUE, cex.names = 0.8, las = 1, main = "Primary Effect by Country")
+abline(v = mean(results$prop, na.rm = TRUE))
+</code></pre>
+
+<pre><code class="r">par(mfrow = c(1, 1))
+dev.off()
+</code></pre>
+
+<pre><code>## null device 
+##           1
+</code></pre>
+
+</a><p><a name="correlation"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="ESCS"></a></p><a name="ESCS">
+<h2 id="plots-with-ses-composite-the-pisa-escs-measure">Plots with SES composite (the PISA ESCS measure)</h2>
+<p>Illustrating the consistency of results we replot figures uing the probit results using the ESCS measure in the pisa database.</p>
+<pre><code class="r">results &lt;- resultsList[[5]]
+par(mfrow = c(2, 2))
+plot(results[, "ICC"], results[, "total"], ylab = "Total Effect", xlab = "ICC", 
+    ylim = c(0, 0.3), pch = "", main = "Relationship between SES \n and Educational Expectations")
+text(results[, "ICC"], results[, "total"], results[, "CNT"], cex = 0.6)
+abline(lm(results[, 1] ~ results[, "ICC"]), col = "grey")
+arrows(x0 = results[, "ICC"], y0 = results[, "total"] - results[, "totalse"], 
+    x1 = results[, "ICC"], y1 = results[, "total"] + results[, "totalse"], length = 0, 
+    col = "grey")
+
+# Indirect Effect
+plot(results[, "ICC"], results[, "prop"], ylab = "Proportion of Total Effect ", 
+    xlab = "ICC", ylim = c(0, 0.8), pch = "", main = "Relationship between SES and Educational Expectations \n Explained by Achievement Differentials")
+text(results[, "ICC"], results[, "prop"], results[, "CNT"], cex = 0.6)
+abline(lm(results[, "prop"] ~ results[, "ICC"]), col = "grey")
+arrows(x0 = results[, "ICC"], y0 = results[, "prop"] - results[, "propse"], 
+    x1 = results[, "ICC"], y1 = results[, "prop"] + results[, "propse"], length = 0, 
+    col = "grey")
+
+ReTotal &lt;- data.frame(results[order(results$total), ])
+ResPlot &lt;- as.table(t(ReTotal[, c("total", "CNT")]))
+colnames(ResPlot) &lt;- ResPlot[2, ]
+barplot(ResPlot, horiz = TRUE, cex.names = 0.5, las = 1)
+abline(v = mean(results$total, na.rm = TRUE))
+
+ReTotal &lt;- data.frame(results[order(results$prop), ])
+ResPlot &lt;- as.table(t(ReTotal[, c("prop", "CNT")]))
+colnames(ResPlot) &lt;- ResPlot[2, ]
+barplot(ResPlot, horiz = TRUE, cex.names = 0.5, las = 1)
+abline(v = mean(results$prop, na.rm = TRUE))
+</code></pre>
+
+<pre><code class="r">par(mfrow = c(1, 1))
+dev.off()
+</code></pre>
+
+<pre><code>## null device 
+##           1
+</code></pre>
+
+</a><p><a name="ESCS"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a name="outliers"></a></p><a name="outliers">
+<h2 id="relationships-excluding-outliers">Relationships Excluding Outliers</h2>
+<p>In the models it was clear that there were some countries who were outliers. While we report on the sample of countries as a whole here, we also provide sensitivity analysis without outliers:</p>
+<pre><code class="r"># Deletion of Italy as outlier. Corr between proportion indirect and CNT
+sapply(resultsList, function(x) cor(x[!c(x$CNT == "ITA"), "prop"], x[!c(x$CNT == 
+    "ITA"), "ICC"]))
+</code></pre>
+
+<pre><code>##  HISEI_PROBIT   HISEI_LOGIT HISCED_PROBIT  HISCED_LOGIT   ESCS_PROBIT 
+##        0.5776        0.5442        0.7134        0.7184        0.6091 
+##    ESCS_LOGIT 
+##        0.5665
+</code></pre>
+
+</a><p><a name="outliers"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p></body></html>
