@@ -125,20 +125,21 @@ body{font-size:16px;}
 </style><title>markDownForAERJ</title></head><body><h1 id="analysis-notes-primary-and-secondary-effects-for-educational-expectations-an-international-perspective">ANALYSIS NOTES - Primary and Secondary Effects for Educational Expectations: An International Perspective</h1>
 <p><a name="top"></a></p><a name="top">
 </a><ol><a name="top">
-</a><li><a name="top"></a><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#prep">Data Preperation</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#princom">Principal Componenets Analysis</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#ICC">Intraclass Correlations</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#descrip">Country Level Descriptives</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#model">Mplus Model Generation</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#extraction">Country Level Results</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#correlation">Plots and Correlations</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#ESCS">Plot with ESCS</a></li>
-<li><a href="file:///var/folders/9f/w7pmf56s0f5gxgj_p68fwbbd5vhytj/T/31.html#outliers">Outliers</a></li>
+</a><li><a name="top"></a><a href="#prep">Data Preperation</a></li>
+<li><a href="#princom">Principal Componenets Analysis</a></li>
+<li><a href="#ICC">Intraclass Correlations</a></li>
+<li><a href="#descrip">Country Level Descriptives</a></li>
+<li><a href="#model">Mplus Model Generation</a></li>
+<li><a href="#extraction">Country Level Results</a></li>
+<li><a href="#correlation">Plots and Correlations</a></li>
+<li><a href="#ESCS">Plot with ESCS</a></li>
+<li><a href="#outliers">Outliers</a></li>
 </ol>
 <p><a name="prep"></a></p><a name="prep">
 <h2 id="data-preperation">Data Preperation</h2>
-<p>Data is taken from the PISA 2003 database. The data is read into R from the developed SPSS datafile (studentData.sav). </p>
-<p>University expectations variable is also created from the <strong>SISCED</strong> variable in the PISA database.</p>
+
+<p>Data is taken from the PISA 2003 database. The data is read into R from the developed SPSS datafile (studentData.sav). University expectations variable was created from the <strong>SISCED</strong> variable in the PISA database.<br><br>The data is avaliable from <a href="http://pisa2003.acer.edu.au/downloads.php">ACER.</a></p>
+
 <pre><code class="r"># read in spss data Export as RData
 library(foreign)
 setwd("/...")
@@ -172,7 +173,8 @@ rm(list = ls(all = TRUE))
 </code></pre>
 
 <p>To manage memory the smaller analysis dataset is saved, the workplace is cleared, and then the workspace is cleared. The smaller data set is then sourced for the remaining analysis. </p>
-</a><p><a name="prep"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+
+</a><p><a name="prep"></a><a href="#top">top</a></p>
 <p><a name="princom"></a></p><a name="princom">
 <h2 id="creation-of-principal-components">Creation of Principal Components</h2>
 <p>Principals components of PISA math, verbal, and science tests was undertaken using the psych package. </p>
@@ -206,7 +208,7 @@ save(AchData, file = "/.../AchData19013013.RData")
 rm(list = ls(all = TRUE))
 </code></pre>
 
-</a><p><a name="princom"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="princom"></a><a href="#top">top</a></p>
 <p><a name="ICC"></a></p><a name="ICC">
 <h2 id="construction-of-intraclass-correlations-icc">Construction of Intraclass correlations (ICC)</h2>
 <p>Country ICCs created using the psych package from a set of anova models. The data is split by country and the ICCs are created in a loop.</p>
@@ -234,7 +236,7 @@ abline(v = mean(ICCs$ICC, na.rm = TRUE))
 AchData &lt;- merge(AchData, ICCs, by = "CNT")
 </code></pre>
 
-</a><p><a name="ICC"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="ICC"></a><a href="#top">top</a></p>
 <p><a name="descrip"></a></p><a name="descrip">
 <h2 id="descriptive-results">Descriptive Results</h2>
 <p>Descriptive results consist of:
@@ -276,7 +278,7 @@ abline(v = mean(descriptives$ExpectTables, na.rm = TRUE))
 <pre><code class="r">pairs(descriptives[, c(2:3, 5:6)])
 </code></pre>
 
-</a><p><a name="descrip"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="descrip"></a><a href="#top">top</a></p>
 <p><a name="model"></a></p><a name="model">
 <h2 id="mplus-probit-logit-models">Mplus Probit &amp; Logit Models</h2>
 <p>First the R data file is saved for use in Mplus using the MplusAutomation package. Five data sets are created each with one plausable value for the Achievement principal component. Note that here we display the unscaled logistic regression coefficents. The scaled coefficents are avaliable from the author with results showing even more similarity with probit results. Scaled logit results were done in the Mediaton package by Imia and colleagues. Here we create a Mplus template file that is read in modified and run using a set of R functions. These functions are designed to loop through countries, SES measures, and logit or probit link functions. This means 30 by 3 by 2 Mplus models are created and run.</p>
@@ -353,7 +355,7 @@ new(ind dir arg11 arg10 arg01 arg00 v1 v0
 </code></pre>
 
 <p>The template file is iterative over in order to create country specific syntax files. The creation and running of files is done by:</p>
-</a><p><a name="model"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="model"></a><a href="#top">top</a></p>
 <pre><code class="r">fileCreation &lt;- function(ses.var = "HISEI", link = "PROBIT") {
     temp &lt;- readLines("/.../MPLUS/TEMPLATEFILE19012013.inp")
     temp[10:60] &lt;- unlist(sapply(temp[10:60], function(x) gsub("HISEI", ses.var, 
@@ -423,7 +425,7 @@ runModels("/.../HISCED", recursive=TRUE)
 runModels("/.../ESCS", recursive=TRUE)
 </code></pre>
 
-<p><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+<p><a href="#top">top</a></p>
 <p><a name="extraction"></a></p><a name="extraction">
 <h2 id="parameter-extraction-and-presentation">Parameter Extraction and Presentation</h2>
 <p>Extraction of Results was done using a series of R functions. The Mplus output files differed slightly from those from other countries and thus there entries were added manually.</p>
@@ -857,7 +859,7 @@ resultsList
 ## 30 0.937 -1.321 USA
 </code></pre>
 
-</a><p><a name="extraction"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="extraction"></a><a href="#top">top</a></p>
 <p><a name="correlation"></a></p><a name="correlation">
 <h2 id="plots-and-correlations-between-model-results-and-country-iccs">Plots and Correlations between Model Results and Country ICCs</h2>
 <p>Here was conduct country level analysis using correations and partial correlations. Partial correlations where done using the ppcor package. Scatter plots of results and barplots or results orded by size are created using the probit models for occupational prestige.</p>
@@ -1032,11 +1034,7 @@ abline(v = mean(results$prop, na.rm = TRUE))
 dev.off()
 </code></pre>
 
-<pre><code>## null device 
-##           1
-</code></pre>
-
-</a><p><a name="correlation"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="correlation"></a><a href="#top">top</a></p>
 <p><a name="ESCS"></a></p><a name="ESCS">
 <h2 id="plots-with-ses-composite-the-pisa-escs-measure">Plots with SES composite (the PISA ESCS measure)</h2>
 <p>Illustrating the consistency of results we replot figures uing the probit results using the ESCS measure in the pisa database.</p>
@@ -1076,11 +1074,7 @@ abline(v = mean(results$prop, na.rm = TRUE))
 dev.off()
 </code></pre>
 
-<pre><code>## null device 
-##           1
-</code></pre>
-
-</a><p><a name="ESCS"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p>
+</a><p><a name="ESCS"></a><a href="#top">top</a></p>
 <p><a name="outliers"></a></p><a name="outliers">
 <h2 id="relationships-excluding-outliers">Relationships Excluding Outliers</h2>
 <p>In the models it was clear that there were some countries who were outliers. While we report on the sample of countries as a whole here, we also provide sensitivity analysis without outliers:</p>
@@ -1095,4 +1089,4 @@ sapply(resultsList, function(x) cor(x[!c(x$CNT == "ITA"), "prop"], x[!c(x$CNT ==
 ##        0.5665
 </code></pre>
 
-</a><p><a name="outliers"></a><a href="./markDownForAERJ_files/markDownForAERJ.html">top</a></p></body></html>
+</a><p><a name="outliers"></a><a href="#top">top</a></p></body></html>
